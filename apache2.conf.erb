@@ -1,0 +1,18 @@
+# Укажите адрес электронной почты администратора сервера
+ServerAdmin webmaster@localhost
+
+# Укажите корневой каталог для веб-сайта
+DocumentRoot /var/www/html
+
+# Настройки для каталога DocumentRoot
+<Directory /var/www/html>
+    Options Indexes FollowSymLinks
+    AllowOverride None
+    Require all granted
+</Directory>
+
+# Настройки для логирования ошибок
+ErrorLog ${APACHE_LOG_DIR}/error.log
+
+# Настройки для логирования доступа
+CustomLog ${APACHE_LOG_DIR}/access.log combined
